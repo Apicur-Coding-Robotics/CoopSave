@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+      <!--nav bar-->
+    <div class="grid grid-cols-3  p-5  bg-slate-900 h-30 w-full gap-20">
+        <!--system logo and banner-->
+        <div class="flex flex-row justify-center items-center">
+       <img src="logo.png" alt="" class="h-20 w-20 rounded-xl">
+       <h1 class="text-white text-5xl font-bold animate-pulse">Coop<span class="text-blue-600">Save</span></h1>
+        </div>
+        <!--nav links-->
+        <div class="flex flex-row items-center justify-around gap-10 ">
+     <a href="home.html" class="text-white text-2xl font-bold hover:border-b-2 border-blue-500">Home</a>
+      <a href="about.html" class="text-white text-2xl font-bold hover:border-b-2 border-blue-500">About</a>
+       <a href="contact.html" class="text-white text-2xl font-bold hover:border-b-2 border-blue-500">Contact</a>
+        <a href="#" class="text-white text-2xl font-bold hover:border-b-2 border-blue-500">Savings</a>
+         
+        </div>
+        <!--register links-->
+        <div class="flex flex-row items-center gap-10 ml-20 ">
+            <a href="join.html" class="text-white text-2xl font-bold "><button class="bg-gradient-to-r from-blue-500 to-purple-900 h-10 w-30 rounded-xl hover:cursor-pointer">Join Us</button></a>
+            <a href="#" class="text-white text-2xl font-bold "><button class="bg-gradient-to-r from-blue-500 to-purple-900 h-10 w-30 rounded-xl hover:cursor-pointer">Admin</button></a>
+        </div>
+    </div>
+    <!--end of nav bar-->
+    <!--main content-->
+    <div class="bg-blue-500 w-full h-190 flex flex-col p-5 items-center gap-10 ">
+        <h1 class="text-white text-6xl font-bold mt-20 ">About <span class="text-yellow-600">CoopSave</span></h1>
+        <div class="w-230">
+   
+            <p class="text-white text-lg">A Cooperative Information Management System (CIMS) is a digital platform designed to digitize, connect, and streamline cooperative operations. It empowers cooperative members and administrators by automating workflows, enhancing financial transparency, and simplifying essential management and regulatory processes.</p>
+
+        </div>
+        <div class="flex flex-row gap-10">
+            <a href="home.html"><button  class="bg-blue-700 h-15 w-45 rounded-xl hover:cursor-pointer shadow-xl hover:scale-120 hover:transition duration-2000 hover:cursor-pointer">Back To Home</button></a>
+            <button type="link" class="bg-yellow-500 h-15 w-45 rounded-xl hover:cursor-pointer shadow-xl hover:scale-120 hover:transition duration-2000 hover:cursor-pointer">See More</button>
+        </div>
+        <h1 class="text-2xl font-bold">Our Statements</h1>
+        <div class="grid grid-cols-3 gap-5 ">
+            <div class="flex flex-col bg-blue-300 h-50 p-5 rounded-xl hover:scale-105 hover:transition duration-2000 hover:cursor-pointer">
+                <h1 class="text-yellow-600 font-bold text-2xl">Our Mission</h1>
+                <p>To empower cooperative movements by providing an intuitive, integrated digital platform that promotes transparency, drives operational efficiency, and fosters inclusive economic growth for all members.</p>
+            </div>
+            <div class="flex flex-col bg-blue-300 h-50 p-5 rounded-xl hover:scale-105 hover:transition duration-2000 hover:cursor-pointer">
+                <h1 class="text-yellow-600 font-bold text-2xl">Our Vision</h1>
+                <p>To build a sustainable, self-reliant, and highly productive cooperative sector founded on strong principles of collaboration, equitable empowerment, and modern digital innovation.</p>
+            </div>
+            <div class="flex flex-col bg-blue-300 h-50 p-5 rounded-xl hover:scale-105 hover:transition duration-2000 hover:cursor-pointer">
+                <h1 class="text-yellow-600 font-bold text-2xl">Our Values</h1>
+                <p>transparency, security, efficiency, and inclusivity—guide every aspect of our platform to build lasting cooperative trust. We safeguard member data with high-level encryption while eliminating slow, manual paperwork through streamlined, real-time digital workflows. </p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-blue-600 h-25 w-full flex items-center justify-center">
+         ©2026 Alright reserved <span class="font-bold ml-1">coopsave@gmail.com</span>
+    </div>
+</body>
+</html>

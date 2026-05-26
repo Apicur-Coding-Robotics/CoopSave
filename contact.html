@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+     <!--nav bar-->
+    <div class="grid grid-cols-3  p-5  bg-slate-900 h-30 w-full gap-20">
+        <!--system logo and banner-->
+        <div class="flex flex-row justify-center items-center ">
+       <img src="logo.png" alt="" class="h-20 w-20 rounded-xl">
+       <h1 class="text-white text-5xl font-bold animate-pulse">Coop<span class="text-blue-600">Save</span></h1>
+        </div>
+        <!--nav links-->
+        <div class="flex flex-row items-center justify-around gap-10 ">
+     <a href="home.html" class="text-white text-2xl font-bold hover:border-b-2 border-blue-500">Home</a>
+      <a href="about.html" class="text-white text-2xl font-bold hover:border-b-2 border-blue-500">About</a>
+       <a href="contact.html" class="text-white text-2xl font-bold hover:border-b-2 border-blue-500">Contact</a>
+        <a href="#" class="text-white text-2xl font-bold hover:border-b-2 border-blue-500">Savings</a>
+         
+        </div>
+        <!--register links-->
+        <div class="flex flex-row items-center gap-10 ml-20 ">
+            <a href="join.html" class="text-white text-2xl font-bold "><button class="hover:scale-120 hover:transition duration-2000 bg-gradient-to-r from-blue-500 to-purple-900 h-10 w-30 rounded-xl hover:cursor-pointer">Join Us</button></a>
+            <a href="#" class="text-white text-2xl font-bold "><button class="hover:scale-120 hover:transition duration-2000 bg-gradient-to-r from-blue-500 to-purple-900 h-10 w-30 rounded-xl hover:cursor-pointer">Admin</button></a>
+        </div>
+    </div>
+    <!--end of nav bar-->
+    <!--main content-->
+    <div class="bg-blue-600 w-full h-200 p-5 flex flex-col">
+        <h1 class="text-6xl font-bold text-slate-900 ml-90">Contact <span class="text-yellow-500">CoopSave</span></h1>
+        <div class="flex flex-col items-center text-2xl font-semibold text-white mt-10"><p>Need help with the Cooperative Management Information System? Our support team is here</p><p> to assist cooperatives with registration, reporting, and technical inquiries.</p></div>
+    <div class="bg-blue-600 w-full h-150 grid grid-cols-2 p-5 ">
+        <div class="grid grid-rows-3 w-120 h-140 p-5 gap-5  pl-12">
+            <div class="h-40 w-90 bg-blue-300 rounded-xl p-5">
+                <img src="logo.png" alt="" class="h-10 w-10 rounded-xl">
+                <h1 class="text-xl font-bold">Location</h1>
+                <p>musanze-Rwanda, 1.5km away from musanze bus park, near saint-mark primary school</p>
+            </div>
+                <div class="h-40 w-90 bg-blue-300 rounded-xl p-5">
+                <img src="email.png" alt="" class="h-10 w-10 rounded-xl">
+                <h1 class="text-xl font-bold">Email</h1>
+                <p>coopsave@gmail.com</p>
+                <p>nibishakadenys935@gmail.com</p>
+            </div>
+             <div class="h-40 w-90 bg-blue-300 rounded-xl p-5">
+                <img src="call.png" alt="" class="h-10 w-10 rounded-xl">
+                <h1 class="text-xl font-bold">Phone</h1>
+                <p>+250 791243615</p>
+                <p>+250 794228057</p>
+                
+            </div>
+           
+        </div>
+        <div class="flex flex-col  shadow-xl h-120 w-140 p-5 gap-5 mt-5 border-t-2 border-blue-400">
+            <h1 class="text-2xl font-bold ml-35 ">Leave Us A Message</h1>
+            <form action="" method="post">
+                <div class="w-full">
+                    <h1 class="text-xl font-bold">Email</h1>
+                    <input type="email" name="" id="" placeholder="Enter your email" class="border-2 border-blue-500 h-12 rounded-xl pl-3 font-semibold w-full bg-white" required>
+                </div>
+                <div class="w-full">
+                    <h1 class="text-xl font-bold">Message</h1>
+                    <textarea name="description" id=""  class="border-2 border-blue-500 h-20 rounded-xl pl-3 font-semibold w-full bg-white" placeholder="Write your message here"></textarea> 
+                </div>
+                <input type="submit" value="Send Message" class="bg-slate-800 my-5 text-white border-2 border-blue-500 h-12 rounded-xl pl-3 font-semibold w-full">
+                
+                   <h1 class="text-xl font-bold ml-50">Follow Us</h1>
+                 
+            </form>
+              <div class="flex flex-row ml-35 gap-7">
+                    <a href="#"><img src="facebook_icon.png" alt="" class="h-10 w-10 rounded-xl"></a>
+                    <a href="#"><img src="instagram_icon.png" alt="" class="h-10 w-10 rounded-xl"></a>
+                    <a href="#"><img src="youtube_icon.png" alt="" class="h-10 w-10 rounded-xl"></a>
+                    <a href="#"><img src="x_twitter_icon.png" alt="" class="h-10 w-10 rounded-xl"></a>
+                   </div>
+        </div>
+    </div>
+    </div>
+    <div class="bg-blue-700 h-25 w-full flex items-center justify-center">
+         ©2026 Alright reserved <span class="font-bold ml-1">coopsave@gmail.com</span>
+    </div>
+</body>
+</html>
