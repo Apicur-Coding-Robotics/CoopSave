@@ -1,4 +1,4 @@
-/* ==================== Global Styles ==================== */
+/*--page css---*/
 * {
     margin: 0;
     padding: 0;
@@ -35,7 +35,7 @@ a {
     color: inherit;
 }
 
-/* ==================== Navigation Bar ==================== */
+/* navbr css */
 .navbar {
     background-color: var(--dark-bg);
     color: white;
@@ -79,7 +79,7 @@ a {
     color: white;
 }
 
-/* ==================== Hero Section ==================== */
+/* hero section css */
 .hero {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: white;
@@ -99,7 +99,7 @@ a {
     opacity: 0.95;
 }
 
-/* ==================== Buttons ==================== */
+/* button css */
 .btn {
     padding: 0.75rem 1.5rem;
     border: none;
@@ -139,7 +139,7 @@ a {
     background-color: #dc2626;
 }
 
-/* ==================== Page Header ==================== */
+/* header */
 .page-header {
     margin-bottom: 2rem;
     padding: 2rem;
@@ -159,7 +159,7 @@ a {
     font-size: 1rem;
 }
 
-/* ==================== About Section ==================== */
+/* about section */
 .about {
     background-color: white;
     padding: 3rem 0;
@@ -212,7 +212,7 @@ a {
     line-height: 1.6;
 }
 
-/* ==================== Statistics Section ==================== */
+/* statistics */
 .stats {
     background-color: white;
     padding: 3rem 0;
@@ -245,7 +245,7 @@ a {
     font-size: 1rem;
 }
 
-/* ==================== Quick Links ==================== */
+/* links*/
 .quick-links {
     background-color: white;
     padding: 3rem 0;
@@ -280,7 +280,7 @@ a {
 }
 
 .quick-link-card:nth-child(3) {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    background: linear-gradient(135deg, #e4a503 0%, #37da0a 100%);
 }
 
 .quick-link-card:nth-child(4) {
