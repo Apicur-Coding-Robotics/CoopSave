@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoopSave - Loan & Savings Cooperative System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>🏦 CoopSave</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="members.html">Members</a></li>
+                <li><a href="loans.html">Loans</a></li>
+                <li><a href="savings.html">Savings</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to CoopSave</h1>
+            <p>Empowering Small Savings Groups & SACCOs with Simple, Effective Management Solutions</p>
+            <button class="btn btn-primary" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">Learn More</button>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About CoopSave</h2>
+            <p>CoopSave is designed to help small savings groups and SACCOs (Savings and Credit Cooperative Organizations) manage their operations efficiently. We provide simple tools for member management, loan processing, and savings tracking.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>👥 Member Management</h3>
+                    <p>Register and manage members with complete profiles and transaction history</p>
+                </div>
+                <div class="feature-card">
+                    <h3>💰 Loan Processing</h3>
+                    <p>Apply for loans, track applications, and calculate interest automatically</p>
+                </div>
+                <div class="feature-card">
+                    <h3>💳 Savings Tracking</h3>
+                    <p>Monitor individual savings accounts and track contributions over time</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📊 Dashboard Analytics</h3>
+                    <p>View real-time statistics and payment status for your cooperative</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stat-box">
+                <h3 id="total-members">0</h3>
+                <p>Total Members</p>
+            </div>
+            <div class="stat-box">
+                <h3 id="total-savings">$0</h3>
+                <p>Total Savings</p>
+            </div>
+            <div class="stat-box">
+                <h3 id="total-loans">$0</h3>
+                <p>Active Loans</p>
+            </div>
+            <div class="stat-box">
+                <h3 id="total-interest">$0</h3>
+                <p>Interest Earned</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="quick-links">
+        <div class="container">
+            <h2>Quick Links</h2>
+            <div class="links-grid">
+                <a href="members.html" class="quick-link-card">
+                    <h3>Add New Member</h3>
+                    <p>Register a new member to the cooperative</p>
+                </a>
+                <a href="loans.html" class="quick-link-card">
+                    <h3>Apply for Loan</h3>
+                    <p>Submit a new loan application</p>
+                </a>
+                <a href="savings.html" class="quick-link-card">
+                    <h3>Make Deposit</h3>
+                    <p>Deposit money into your savings account</p>
+                </a>
+                <a href="contact.html" class="quick-link-card">
+                    <h3>Contact Us</h3>
+                    <p>Get help or provide feedback</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 CoopSave. All rights reserved. | Empowering Cooperative Societies</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Update dashboard stats on home page load
+        window.addEventListener('load', function() {
+            updateDashboardStats();
+        });
+    </script>
+</body>
+</html>

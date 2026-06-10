@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members - CoopSave</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>🏦 CoopSave</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="members.html" class="active">Members</a></li>
+                <li><a href="loans.html">Loans</a></li>
+                <li><a href="savings.html">Savings</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Member Management</h1>
+            <p>Register and manage cooperative members</p>
+        </div>
+
+        <div class="form-section">
+            <h2>Register New Member</h2>
+            <form id="memberForm" class="form">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="idNumber">ID Number</label>
+                    <input type="text" id="idNumber" name="idNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="joinDate">Date Joined</label>
+                    <input type="date" id="joinDate" name="joinDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="initialDeposit">Initial Deposit ($)</label>
+                    <input type="number" id="initialDeposit" name="initialDeposit" step="0.01" min="0" value="0">
+                </div>
+                <button type="submit" class="btn btn-primary">Register Member</button>
+            </form>
+        </div>
+
+        <div class="members-section">
+            <h2>All Members</h2>
+            <div class="search-box">
+                <input type="text" id="searchMembers" placeholder="Search members by name or ID...">
+            </div>
+            <div id="membersList" class="members-grid">
+                <!-- Members will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 CoopSave. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.getElementById('memberForm').addEventListener('submit', registerMember);
+        document.getElementById('searchMembers').addEventListener('input', function(e) {
+            filterMembers(e.target.value);
+        });
+        
+        window.addEventListener('load', function() {
+            displayMembers();
+        });
+    </script>
+</body>
+</html>

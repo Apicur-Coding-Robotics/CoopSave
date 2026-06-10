@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - CoopSave</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>🏦 CoopSave</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="members.html">Members</a></li>
+                <li><a href="loans.html">Loans</a></li>
+                <li><a href="savings.html">Savings</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Contact Us</h1>
+            <p>Get in touch with the CoopSave team</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <div class="info-item">
+                    <h3>📍 Address</h3>
+                    <p>123 Cooperative Avenue<br>Business District<br>City, State 12345</p>
+                </div>
+                <div class="info-item">
+                    <h3>📞 Phone</h3>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+                <div class="info-item">
+                    <h3>✉️ Email</h3>
+                    <p>support@coopsave.com</p>
+                </div>
+                <div class="info-item">
+                    <h3>🕐 Business Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 5:00 PM<br>Saturday: 10:00 AM - 2:00 PM<br>Sunday: Closed</p>
+                </div>
+            </div>
+
+            <div class="contact-form-section">
+                <h2>Send us a Message</h2>
+                <form id="contactForm" class="form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail">Email</label>
+                        <input type="email" id="contactEmail" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">-- Select Subject --</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="technical">Technical Support</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="complaint">Complaint</option>
+                            <option value="membership">Membership Question</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Type your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <div id="contactResponse" class="response-message" style="display:none;"></div>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3>How do I register as a member?</h3>
+                    <p>Visit the Members page and fill out the registration form with your details. An administrator will review your application.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How long does it take to process a loan application?</h3>
+                    <p>Most loan applications are processed within 3-5 business days. You'll receive a notification once your application has been reviewed.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What is the maximum loan amount I can apply for?</h3>
+                    <p>The maximum loan amount depends on your savings balance and membership history. Contact us for specific details.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is my personal data secure?</h3>
+                    <p>Yes, we use industry-standard security measures to protect all member data. Your information is encrypted and stored securely.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I withdraw my savings anytime?</h3>
+                    <p>Withdrawals are typically allowed with a 14-day notice period. Some restrictions may apply depending on active loans.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How is interest calculated on loans?</h3>
+                    <p>Interest is calculated using the simple interest formula: (Principal × Rate × Time) / 100. Monthly payments are divided equally over the loan term.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 CoopSave. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            sendContactMessage();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings - CoopSave</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>🏦 CoopSave</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="members.html">Members</a></li>
+                <li><a href="loans.html">Loans</a></li>
+                <li><a href="savings.html" class="active">Savings</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Savings Management</h1>
+            <p>Track member savings and contributions</p>
+        </div>
+
+        <div class="form-section">
+            <h2>Record Savings Deposit</h2>
+            <form id="savingsForm" class="form">
+                <div class="form-group">
+                    <label for="savingsMemberId">Member Name / ID</label>
+                    <select id="savingsMemberId" name="savingsMemberId" required>
+                        <option value="">-- Select Member --</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="depositAmount">Deposit Amount ($)</label>
+                    <input type="number" id="depositAmount" name="depositAmount" step="0.01" min="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="depositDate">Deposit Date</label>
+                    <input type="date" id="depositDate" name="depositDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="depositNote">Note (Optional)</label>
+                    <textarea id="depositNote" name="depositNote" rows="3" placeholder="Add any notes..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Record Deposit</button>
+            </form>
+        </div>
+
+        <div class="savings-section">
+            <h2>Savings Summary</h2>
+            <div class="savings-summary-grid">
+                <div class="summary-card">
+                    <h4>Total Savings</h4>
+                    <p class="summary-value" id="totalSavings">$0</p>
+                </div>
+                <div class="summary-card">
+                    <h4>Total Members</h4>
+                    <p class="summary-value" id="totalSavingsMembers">0</p>
+                </div>
+                <div class="summary-card">
+                    <h4>Average Savings</h4>
+                    <p class="summary-value" id="avgSavings">$0</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="savings-section">
+            <h2>Member Savings Accounts</h2>
+            <div class="search-box">
+                <input type="text" id="searchSavings" placeholder="Search by member name or ID...">
+            </div>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Member Name</th>
+                        <th>Member ID</th>
+                        <th>Total Savings</th>
+                        <th>Last Deposit</th>
+                        <th>Number of Deposits</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="savingsTable">
+                    <!-- Savings records will be displayed here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="savings-section">
+            <h2>Recent Deposits</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Member Name</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Note</th>
+                    </tr>
+                </thead>
+                <tbody id="depositsTable">
+                    <!-- Recent deposits will be displayed here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 CoopSave. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.getElementById('savingsForm').addEventListener('submit', recordDeposit);
+        document.getElementById('searchSavings').addEventListener('input', function(e) {
+            filterSavings(e.target.value);
+        });
+        
+        window.addEventListener('load', function() {
+            populateMemberSelectForSavings();
+            displaySavings();
+            displaySavingsSummary();
+        });
+    </script>
+</body>
+</html>
