@@ -43,7 +43,7 @@ a {
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(19, 17, 17, 0.1);
 }
 
 .nav-container {
@@ -75,13 +75,13 @@ a {
 
 .nav-menu a:hover,
 .nav-menu a.active {
-    background-color: var(--primary-color);
+    background-color: rgb(7, 42, 213);
     color: white;
 }
 
 /* hero section css */
 .hero {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(135deg, rgb(66, 66, 216), rgb(11, 185, 159),rgb(78, 201, 123));
     color: white;
     padding: 4rem 2rem;
     text-align: center;
@@ -143,7 +143,7 @@ a {
 .page-header {
     margin-bottom: 2rem;
     padding: 2rem;
-    background-color: white;
+    background-color: rgba(213, 231, 233, 0.696);
     border-radius: 8px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
@@ -193,7 +193,9 @@ a {
     border-radius: 8px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-top: 4px solid var(--primary-color);
+    border-top: 4px solid green;
+    border-bottom: 4px solid green;
+
 }
 
 .feature-card:hover {
@@ -229,9 +231,9 @@ a {
 .stat-box {
     text-align: center;
     padding: 2rem;
-    background-color: var(--light-bg);
+    background-color: lightgray;
     border-radius: 8px;
-    border-left: 4px solid var(--primary-color);
+    border-left: 4px solid blue;
 }
 
 .stat-box h3 {
@@ -304,7 +306,7 @@ a {
 
 /* ==================== Forms ==================== */
 .form-section {
-    background-color: white;
+    background-color: rgba(213, 231, 233, 0.696);
     padding: 2rem;
     border-radius: 8px;
     margin-bottom: 3rem;
@@ -629,7 +631,13 @@ a {
 }
 
 /* ==================== Sections ==================== */
-.members-section,
+.members-section{
+    background-color: rgba(213, 231, 233, 0.696);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
 .loans-section,
 .savings-section {
     background-color: white;
@@ -705,6 +713,7 @@ a {
 
     .page-header {
         padding: 1.5rem;
+        
     }
 
     .page-header h1 {
