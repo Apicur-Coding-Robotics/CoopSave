@@ -1,6 +1,6 @@
 /*--page css---*/
 * {
-    margin: 0;
+    margin: 5;
     padding: 0;
     box-sizing: border-box;
 }
@@ -21,11 +21,11 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--light-bg);
     color: var(--text-dark);
-    line-height: 1.6;
+    line-height: 3.6;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 120px;
     margin: 0 auto;
     padding: 0 20px;
 }
